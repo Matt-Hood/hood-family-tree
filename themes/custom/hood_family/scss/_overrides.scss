@@ -1,0 +1,135 @@
+/* Structured Content Block Region CSS */
+
+.structured-content.container {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  .region.region-structured-content {
+    .node--type-events {
+      .center-event.node--type-events {}
+    }
+  }
+}
+.structured-content.container>div {
+  margin-left: 0;
+  margin-right: 0;
+}
+.structured-content.container>div>div {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.page-header {
+  border-bottom: none !important;
+  display: none !important;
+}
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.container {
+  width: 100% !important;
+}
+
+.menu--top-menu, #block-hood-family-main-menu {
+  width: 1260px;
+  margin: 0 auto;
+}
+
+#block-hood-family-main-menu {
+  .menu--main {
+
+    li {
+      a {
+        font-family: $font-normal;
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+
+      }
+      a:hover {
+        background-color: white;
+        color: red;
+      }
+    }
+  }
+}
+.region-header {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+#block-topmenu {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  background: black;
+  height: 50px !important;
+
+  .menu--top-menu {
+
+    display: flex;
+    flex-direction: row-reverse;
+    background: black;
+
+    li {
+      a {
+        font-family: $font-normal;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+
+      }
+      a:hover {
+        background-color: black;
+        color: red;
+      }
+    }
+  }
+
+}
+
+.nav > li > a {
+  padding: 13px 15px;
+}
+
+
+@media only screen and (max-width:768px) {
+  .menu--top-menu, #block-hood-family-main-menu {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .region-header {
+    width: 100%;
+    box-shadow: none;
+  }
+  #block-topmenu {
+
+    height: auto;
+
+    .menu--top-menu {
+      justify-content: flex-start;
+    }
+    }
+
+
+  #block-hood-family-main-menu {
+    .menu--main {
+flex-direction: row;
+    }
+  }
+
+  li {
+    a {
+      font-size: 10pt;
+    }
+  }
+
+  h1 {
+    font-size: 32pt !important;
+    line-height: 40pt !important;
+    width: 90%;
+  }
+  h2 {
+    font-size: 20pt;
+    width: 90%;
+  }
+}

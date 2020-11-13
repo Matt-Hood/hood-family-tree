@@ -18,7 +18,7 @@ class BulkFormTest extends NodeTestBase {
    *
    * @var array
    */
-  protected static $modules = ['node_test_views', 'language'];
+  public static $modules = ['node_test_views', 'language'];
 
   /**
    * {@inheritdoc}
@@ -42,7 +42,7 @@ class BulkFormTest extends NodeTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp($import_test_views = TRUE): void {
+  protected function setUp($import_test_views = TRUE) {
     parent::setUp($import_test_views);
 
     ConfigurableLanguage::createFromLangcode('en-gb')->save();

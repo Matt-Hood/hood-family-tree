@@ -38,7 +38,7 @@ class ArgumentValidatorTest extends ArgumentValidatorPluginBase {
    */
   public function validateArgument($arg) {
     if ($arg === 'this value should be replaced') {
-      // Set the argument to a numeric value so this is valid on PostgreSQL for
+      // Set the argument to a numeric value so this is valid on PostgeSQL for
       // numeric fields.
       $this->argument->argument = '1';
       return TRUE;

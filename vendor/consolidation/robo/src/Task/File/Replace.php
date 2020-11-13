@@ -45,11 +45,6 @@ class Replace extends BaseTask
     protected $from;
 
     /**
-     * @var integer
-     */
-    protected $limit = -1;
-
-    /**
      * @var string|string[]
      */
     protected $to;
@@ -118,19 +113,6 @@ class Replace extends BaseTask
     }
 
     /**
-     * If used with $this->regexp() how many counts will be replaced
-     *
-     * @param int $limit
-     *
-     * @return $this
-     */
-    public function limit($limit)
-    {
-        $this->limit = $limit;
-        return $this;
-    }
-
-    /**
      * {@inheritdoc}
      */
     public function run()
@@ -142,7 +124,7 @@ class Replace extends BaseTask
 
         $text = file_get_contents($this->filename);
         if ($this->regex) {
-            $text = preg_replace($this->regex, $this->to, $text, $this->limit, $count);
+            $text = preg_replace($this->regex, $this->to, $text, -1, $count);
         } else {
             $text = str_replace($this->from, $this->to, $text, $count);
         }

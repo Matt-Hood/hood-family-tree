@@ -1,0 +1,34 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'Hood Family Tree'
+description: 'Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
+package: 'Bootstrap'
+
+regions:
+  #navigation: 'Navigation'
+  #navigation_collapsible: 'Navigation (Collapsible)'
+  banners: 'Banners'
+  connect_nav: 'Connect Nav'
+  header: 'Top Bar'
+  header_two_left: 'Top Bar Two Left'
+  header_two_right: 'Top Bar Two Right'
+  header_wide_width: "Header - Wide Width"
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  content_block_left: 'Content Blocks Left'
+  content_block_right: 'Content Blocks Right'
+  structured_content: 'Structured Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  sticky_footer: 'Sticky Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  page_paragraphs: 'Unused Paragraphs'
+
+libraries-extend:
+  bootstrap/framework:
+    - hood_family/framework

@@ -15,7 +15,7 @@ use Drupal\migrate\Plugin\MigrationInterface;
 use Drupal\Tests\UnitTestCase;
 
 /**
- * Base test class for entity migration destination functionality.
+ * Base test class forentity migration destination functionality.
  */
 class EntityTestBase extends UnitTestCase {
 

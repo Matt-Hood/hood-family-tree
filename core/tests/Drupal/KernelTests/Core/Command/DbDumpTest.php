@@ -25,7 +25,7 @@ class DbDumpTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  protected static $modules = [
+  public static $modules = [
     'system',
     'config',
     'dblog',
@@ -81,7 +81,7 @@ class DbDumpTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp(): void {
+  protected function setUp() {
     parent::setUp();
 
     if (Database::getConnection()->databaseType() !== 'mysql') {
@@ -153,6 +153,7 @@ class DbDumpTest extends KernelTestBase {
    * Test the command directly.
    */
   public function testDbDumpCommand() {
+
     $application = new DbDumpApplication();
     $command = $application->find('dump-database-d8-mysql');
     $command_tester = new CommandTester($command);
@@ -181,6 +182,7 @@ class DbDumpTest extends KernelTestBase {
    * Test loading the script back into the database.
    */
   public function testScriptLoad() {
+
     // Generate the script.
     $application = new DbDumpApplication();
     $command = $application->find('dump-database-d8-mysql');

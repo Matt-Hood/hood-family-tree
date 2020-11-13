@@ -19,7 +19,7 @@ class EntityReferenceAutoCreateTest extends BrowserTestBase {
 
   use EntityReferenceTestTrait;
 
-  protected static $modules = ['node', 'taxonomy', 'entity_test'];
+  public static $modules = ['node', 'taxonomy', 'entity_test'];
 
   /**
    * {@inheritdoc}
@@ -40,7 +40,7 @@ class EntityReferenceAutoCreateTest extends BrowserTestBase {
    */
   protected $referencedType;
 
-  protected function setUp(): void {
+  protected function setUp() {
     parent::setUp();
 
     // Create "referencing" and "referenced" node types.

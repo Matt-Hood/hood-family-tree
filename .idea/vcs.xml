@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libraries/lazysizes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/bootstrap_paragraphs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/cheeseburger_menu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/display_field_copy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/entityqueue" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/geysir" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/rules" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/smart_content" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/modules/contrib/typed_data" vcs="Git" />
+  </component>
+</project>

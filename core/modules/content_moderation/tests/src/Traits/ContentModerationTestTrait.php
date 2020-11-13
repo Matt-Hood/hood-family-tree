@@ -6,7 +6,7 @@ use Drupal\workflows\Entity\Workflow;
 use Drupal\workflows\WorkflowInterface;
 
 /**
- * Trait ContentModerationTestTrait.
+ * Trait ContentModerationTestTraint.
  */
 trait ContentModerationTestTrait {
 

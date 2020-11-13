@@ -83,7 +83,7 @@ class CKEditorIntegrationTest extends WebDriverTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp(): void {
+  protected function setUp() {
     parent::setUp();
 
     FilterFormat::create([
@@ -218,7 +218,7 @@ class CKEditorIntegrationTest extends WebDriverTestBase {
 
     // There's a second kind of error message that comes from the back end
     // that happens when the media uuid can't be converted to a media preview.
-    // In this case, the error will appear in a the themeable
+    // In this case, the error will appear in a the themable
     // media-embed-error.html template.  We have a hook altering the css
     // classes to test the twi template is working properly and picking up our
     // extra class.
