@@ -774,8 +774,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'euqvrgmy_hood_family',
-  'username' => 'euqvrgmy_hood',
+  'database' => 'hood_family',
+  'username' => 'hood_family',
   'password' => 'toontown14',
   'prefix' => '',
   'host' => 'localhost',
